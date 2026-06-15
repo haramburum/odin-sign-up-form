@@ -13,6 +13,54 @@
         <span class="logo__text">ODIN</span>
       </div>
     </div>
-    <div class="right-side"></div>
+    <div class="right-side">
+      <div class="right-side__texts">
+        <div class="container right-side__container">
+          <p class="right-side__textmain text">
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            <em>now</em> to get started.
+            <p class="right-side__textsemi text">You now you want to.</p>
+          </p>
+        </div>
+      </div>
+      <form id="registerForm"  class="right-side__form form" method="post" action="#">
+        <div class="form__container container">
+          <fieldset class="form__fieldset">
+            <legend class="text">Let`s do this!</legend>
+            <div class="form__elem">
+              <label for="firstName">first name</label>
+              <input type="text" id="firstName" name="firstName">
+            </div>
+            <div class="form__elem">
+              <label for="lastName">last name</label>
+              <input type="text" id="lastName" name="lastName">
+            </div>
+            <div class="form__elem">
+              <label for="email">email</label>
+              <input type="email" id="email" name="email">
+            </div>
+            <div class="form__elem">
+              <label for="phoneNumber">phone number</label>
+              <input type="tel" id="phoneNumber" name="phoneNumber">
+            </div>
+            <div class="form__elem">
+              <label for="password">password</label>
+              <input type="password" id="password" name="password">
+            </div>
+            <div class="form__elem">
+              <label for="confPassword">confirm password</label>
+              <input type="password" id="confPassword" name="confPassword">
+            </div>
+          </fieldset>
+        </div>
+      </form>
+      <div class="container">
+        <button class="submitBtn" form="registerForm">Create Account</button>
+        <p class="login">Already have an acoount?
+          <a href="#">Log in</a>
+        </p>
+      </div>
+    </div>
   </body>
 </html>

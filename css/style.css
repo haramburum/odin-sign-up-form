@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Norse';
-  src: url('../fonts/Norsebold.otf');
+  font-family: "Norse";
+  src: url("../fonts/Norsebold.otf");
   font-weight: 800;
   font-display: swap;
 }
@@ -10,13 +10,24 @@
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  margin-left: 50px;
+  max-width: 800px;
 }
 
 .left-side {
   display: flex;
-  width: 30%;
+  width: 25%;
   height: 100vh;
-  background-image: url('../img/backround.jpg');
+  background-image: url("../img/backround.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -44,4 +55,95 @@
   font-weight: 800;
   color: #ffffff;
   font-size: 90px;
+}
+
+.right-side {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 75%;
+  height: 100vh;
+  background-color: rgb(238, 236, 236);
+}
+
+.text {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.right-side__textmain {
+  margin-bottom: 30px;
+}
+
+.right-side__textsemi {
+  margin-bottom: 50px;
+}
+
+.form {
+  padding: 50px 0;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 15px 5px rgb(206, 203, 203);
+  margin-bottom: 30px;
+}
+
+.form__fieldset {
+  flex-wrap: wrap;
+  display: flex;
+  border: none;
+  row-gap: 30px;
+  column-gap: 70px;
+}
+
+.form__elem {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.form__elem label {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.form__elem input {
+  width: 280px;
+  height: 30px;
+  border: 2px solid #e5e7eb;
+  padding-left: 3px;
+  border-radius: 5px;
+}
+
+.form__elem input:focus {
+  outline: none;
+  border: 2px solid blue;
+  box-shadow: 0px 3px 20px 0px #bcbdc0;
+}
+
+.form__elem input[type='password']:user-invalid {
+  outline: none;
+  border: 2px solid red;
+}
+
+.submitBtn {
+  width: 230px;
+  background-color: #596D48;
+  color: white;
+  border: none;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.login {
+  font-weight: 600;
+}
+
+.login a {
+  text-decoration: none;
+  color: #596D48;
 }
