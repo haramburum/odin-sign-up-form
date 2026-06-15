@@ -144,7 +144,7 @@ body {
   border: 2px solid red;
 }
 
-.submitBtn {
+.bottomPartForm__submitBtn {
   width: 230px;
   background-color: #596d48;
   color: white;
@@ -157,11 +157,11 @@ body {
   margin-bottom: 30px;
 }
 
-.login {
+.bottomPartForm__login {
   font-weight: 600;
 }
 
-.login a {
+.bottomPartForm__login a {
   text-decoration: none;
   color: #596d48;
 }
