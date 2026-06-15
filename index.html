@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./js/script.js" defer></script>
     <link rel="stylesheet" href="./css/style.css" />
     <title>Sign-up form</title>
   </head>
@@ -30,27 +31,27 @@
             <legend class="text">Let`s do this!</legend>
             <div class="form__elem">
               <label for="firstName">first name</label>
-              <input type="text" id="firstName" name="firstName">
+              <input type="text" id="firstName" name="firstName" required>
             </div>
             <div class="form__elem">
               <label for="lastName">last name</label>
-              <input type="text" id="lastName" name="lastName">
+              <input type="text" id="lastName" name="lastName" required>
             </div>
             <div class="form__elem">
               <label for="email">email</label>
-              <input type="email" id="email" name="email">
+              <input type="email" id="email" name="email" required>
             </div>
             <div class="form__elem">
               <label for="phoneNumber">phone number</label>
-              <input type="tel" id="phoneNumber" name="phoneNumber">
+              <input type="tel" id="phoneNumber" name="phoneNumber" required>
             </div>
             <div class="form__elem">
               <label for="password">password</label>
-              <input type="password" id="password" name="password">
+              <input class="password" type="password" id="password" name="password" required>
             </div>
             <div class="form__elem">
               <label for="confPassword">confirm password</label>
-              <input type="password" id="confPassword" name="confPassword">
+              <input class="confPassword" type="password" id="confPassword" name="confPassword" required>
             </div>
           </fieldset>
         </div>
